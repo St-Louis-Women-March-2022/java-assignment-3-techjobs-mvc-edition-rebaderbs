@@ -29,6 +29,9 @@ public class ListController {
         columnChoices.put("positionType", "Position Type");
         columnChoices.put("coreCompetency", "Skill");
 
+//  <!-- TODO #2: Complete the View Jobs By Category Table. -->
+//  added a table choice for "View All", link appears and works
+        tableChoices.put("all", "View All");
         tableChoices.put("employer", JobData.getAllEmployers());
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());
