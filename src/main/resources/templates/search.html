@@ -37,7 +37,39 @@
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
+    <div th:replace="list-jobs :: search-results"></div>
 
+    <!--I initially copy/pasted the table code from list-jobs into this file; once I got the fragment to work with many different search/list options, I commented it out-->
+    <!--    <table th:each="job : ${jobs}" class="job-listing">-->
+<!--        <tr>-->
+<!--            <td>ID</td>-->
+<!--            <td th:text="${job.id}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Name</td>-->
+<!--            <td th:text="${job.Name}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Name</td>-->
+<!--            <td th:text="${job.Name}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Employer</td>-->
+<!--            <td th:text="${job.Employer}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Location</td>-->
+<!--            <td th:text="${job.Location}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Position Type</td>-->
+<!--            <td th:text="${job.PositionType}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Skill</td>-->
+<!--            <td th:text="${job.CoreCompetency}"></td>-->
+<!--        </tr>-->
+<!--    </table>-->
 </div>
 
 </body>
